@@ -117,6 +117,7 @@
 .container{
     margin: 3rem auto;
     width: 90%;
+    /* margin-left: 150px; */
 }
 
 .we__offer{
@@ -125,6 +126,9 @@
     gap: 0.5rem;
     align-items: center;
     justify-content: center;
+    /* margin-right: 1px; */
+    
+
 }
 
 .we__offer_card{
@@ -134,6 +138,7 @@
     border: 1px solid #e0e0e0;
     transition: all 1s ease;
     margin-right: 12px;
+    
 }
 
 .we__offer_card:hover{
@@ -158,34 +163,44 @@
 .we__offer_content p{
     font-size: 12.5px;
 }
+
 .collections h1{
    font-weight: 600;
+   font-size: 30px;
+   margin-left: 180px;
 }
 .collections .sub__heading_container{
-    font-size:15px;
+    font-size:22px;
+    font-weight: 200;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content:center;
     flex-wrap: wrap;
-    gap: 1rem;
+    gap: 1.5rem;
+    margin-left: 1px;
+    /* letter-spacing: 0.5rem; */
 }
 .sub__heading_container span:nth-child(2){
     color:#ff7e8b;
-    font-size: 13px;
+    font-size: 17px;
+    font-weight: 200;
     cursor: pointer;
+    /* gap: 2rem; */
+
 
 }
 .collections_card_container{
     display:flex;
-    align-items:center; 
+    /* align-items:center;   */
     justify-content:center;
     flex-wrap: wrap; 
     gap: 0.5rem;
-    margin-top:1.25 rem; 
+    margin-top:2rem; 
+    margin-left:1rem;
 } 
 .collections_card_container .card{
-    height: 300px;
-    min-width: 240px;
+    height: 350px;
+    min-width: 250px;
     background-size: cover; 
     background-position: center;
     border-radius: 10px;
@@ -341,4 +356,159 @@
 
 .right .download__app_container div img{
     width: 35%;
+}
+/* Media queries for download app */
+@media only screen and (max-width: 1300px){
+    .get__the_app .semiContainer .left,
+    .get__the_app .semiContainer .right{
+        flex : 1;
+    }
+    .get__the_app .semiContainer{
+        width: 80%;
+    }
+}
+@media only screen  and (max-width:900px){
+    .get__the_app{
+        padding: 2rem 0;
+    }
+    .get__the_app .semiContainer{
+        width: 95%;
+        flex-direction: column;
+    }
+
+}
+.container_Explore_section{
+    background-color: white;
+}
+.container_Explore_section .container_content p{
+       font-size: 30px;
+       margin: 0 0  0 210px;
+}
+.container_content .heading_container h5{
+    font-size: 25px;
+    font-weight: 50;
+    margin: 0 0  0 210px;
+    border: 1px solid black;
+    margin-top: 12px;
+    width: 1200px;
+    padding: 12px;
+    
+}
+
+.footer{
+    width: 100%;
+}
+
+.footer_section1{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    width: 80%;
+    margin: auto;
+}
+
+.footer_section1 img{
+    width: 130px;
+}
+
+.section1__buttonContainer{
+    display: flex;
+    gap: 1rem;
+}
+
+.section1__buttonContainer button{
+    padding: 5px;
+    width: 90px;
+    border: 1px solid gray;
+    border-radius: 5px;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    cursor: pointer;
+}
+
+.navigation_container{
+    display: grid;
+    /* grid-template-columns: 1fr 1fr 1fr 1fr 1fr; */
+    grid-template-columns: repeat(5, 1fr);
+    width: 80%;
+    margin: auto;
+    gap: 1rem;
+    padding: 3rem 0;
+}
+
+.link__container{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.link__container h5{
+    font-weight: 500;
+    font-size: 15px;
+    margin-bottom: 5px;
+    letter-spacing: 0.8px;
+}
+
+.footer__link{
+    text-decoration: none;
+    color: gray;
+    font-size: 12.5px;
+    font-weight: 300;
+}
+
+.footer__link:hover{
+    color: black;
+}
+
+.section__links_container button{
+  background-color: black;
+  border: none;
+  width: 25px;
+  height: 25px;
+  border-radius: 30px;
+  color: white;
+  cursor: pointer;
+}
+.section__links_container button i{
+    /* color: white; */
+    font-size: 13px;
+    display: flex;
+    /* horizontal / x-axis */
+    align-items: center; 
+    /* Vertical / y-axis */
+    justify-content: center;
+}
+
+.footer__section_logos{
+    width: 100%;
+}
+
+.disclamer{
+    width: 95%;
+    color: gray;
+    margin: auto;
+    border-top: 1px solid gray;
+    padding-top: 1.5rem;
+}
+
+@media only screen and (max-width: 900px){
+    .navigation_container{
+            grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media only screen and (max-width: 500px){
+    .navigation_container{
+            grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media only screen and (max-width: 320px){
+    .navigation_container{
+            grid-template-columns: repeat(1, 1fr);
+    }
 }
